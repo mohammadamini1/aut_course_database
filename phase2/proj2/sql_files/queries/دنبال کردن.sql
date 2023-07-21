@@ -1,0 +1,13 @@
+INSERT IGNORE INTO
+    FOLLOWS (FOLLOWER, FOLLOWED)
+SELECT
+    U1.U_ID,
+    U2.U_ID
+FROM
+    USERS AS U1
+    CROSS JOIN USERS AS U2
+WHERE
+    U1.USER_NAME = %(follower)s
+    AND U2.USER_NAME = %(followed)s;
+
+
