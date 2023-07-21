@@ -1,0 +1,109 @@
+-- اضافه کردن علامت ویژه به آوا
+-- INSERT
+--     IGNORE INTO SPECS (S_TEXT)
+-- VALUES
+--     (%(spec_text)s);
+-- UPDATE
+--     AVA
+-- SET
+--     SPEC_ID = (
+--         SELECT
+--             S_ID
+--         FROM
+--             SPECS S
+--         WHERE
+--             S_TEXT = %(spec_text)s
+--     )
+-- WHERE
+--     A_ID = %(ava_id)s;
+
+INSERT
+    IGNORE INTO SPECS (S_TEXT)
+VALUES
+    ("#QWERT");
+INSERT
+    IGNORE INTO AVA_SPECS (AVA_ID, SPEC_ID)
+SELECT
+    (1),
+    S_ID
+FROM
+    SPECS
+WHERE
+    S_TEXT = "#QWERT";
+
+INSERT
+    IGNORE INTO SPECS (S_TEXT)
+VALUES
+    ("#QWERT");
+INSERT
+    IGNORE INTO AVA_SPECS (AVA_ID, SPEC_ID)
+SELECT
+    (5),
+    S_ID
+FROM
+    SPECS
+WHERE
+    S_TEXT = "#QWERT";
+
+
+
+INSERT
+    IGNORE INTO SPECS (S_TEXT)
+VALUES
+    ("#XXXXX");
+INSERT
+    IGNORE INTO AVA_SPECS (AVA_ID, SPEC_ID)
+SELECT
+    (4),
+    S_ID
+FROM
+    SPECS
+WHERE
+    S_TEXT = "#XXXXX";
+
+
+INSERT
+    IGNORE INTO SPECS (S_TEXT)
+VALUES
+    ("#QWERT");
+INSERT
+    IGNORE INTO AVA_SPECS (AVA_ID, SPEC_ID)
+SELECT
+    (6),
+    S_ID
+FROM
+    SPECS
+WHERE
+    S_TEXT = "#QWERT";
+
+
+INSERT
+    IGNORE INTO SPECS (S_TEXT)
+VALUES
+    ("#XXXXX");
+INSERT
+    IGNORE INTO AVA_SPECS (AVA_ID, SPEC_ID)
+SELECT
+    (2),
+    S_ID
+FROM
+    SPECS
+WHERE
+    S_TEXT = "#XXXXX";
+
+INSERT
+    IGNORE INTO SPECS (S_TEXT)
+VALUES
+    ("#LOVED");
+INSERT
+    IGNORE INTO AVA_SPECS (AVA_ID, SPEC_ID)
+SELECT
+    (8),
+    S_ID
+FROM
+    SPECS
+WHERE
+    S_TEXT = "#LOVED";
+
+
+

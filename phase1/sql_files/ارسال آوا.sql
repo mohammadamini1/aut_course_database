@@ -1,0 +1,93 @@
+
+-- INSERT INTO
+--     AVA (SENDER_ID, CONTEXT)
+-- SELECT
+--     SENDER_ID,
+--     (%(context) s)
+-- FROM
+--     USERS
+-- WEHRE
+--     USER_NAME = %(username)s;
+
+
+
+
+INSERT INTO
+    AVA (SENDER_ID, CONTEXT)
+SELECT
+    SENDER_ID,
+    ("First ava ever!");
+FROM
+    USERS
+WEHRE
+    USER_NAME = "U1_USERNAME";
+
+INSERT INTO
+    AVA (SENDER_ID, CONTEXT)
+SELECT
+    SENDER_ID,
+    ("SECOND ava ever!");
+FROM
+    USERS
+WEHRE
+    USER_NAME = "U1_USERNAME";
+
+INSERT INTO
+    AVA (SENDER_ID, CONTEXT)
+SELECT
+    SENDER_ID,
+    ("my ava 1");
+FROM
+    USERS
+WEHRE
+    USER_NAME = "aaAA";
+
+INSERT INTO
+    AVA (SENDER_ID, CONTEXT)
+SELECT
+    SENDER_ID,
+    ("ava 33333333333333333333333333");
+FROM
+    USERS
+WEHRE
+    USER_NAME = "BBbB";
+
+INSERT INTO
+    AVA (SENDER_ID, CONTEXT)
+SELECT
+    SENDER_ID,
+    ("my ava 2");
+FROM
+    USERS
+WEHRE
+    USER_NAME = "aaAA";
+
+INSERT INTO
+    AVA (SENDER_ID, CONTEXT)
+SELECT
+    SENDER_ID,
+    ("ava 3XXX33XXX33XXX33XXX33XXX33XXX3");
+FROM
+    USERS
+WEHRE
+    USER_NAME = "BBbB";
+
+INSERT INTO
+    AVA (SENDER_ID, CONTEXT)
+SELECT
+    SENDER_ID,
+    ("AVA 33");
+FROM
+    USERS
+WEHRE
+    USER_NAME = "BBbB";
+
+INSERT INTO
+    AVA (SENDER_ID, CONTEXT)
+SELECT
+    U_ID,
+    ("contexxxxxxxxxxxxxxxxxxxxxxxxxxt")
+FROM
+    USERS
+WHERE
+    USER_NAME = "U44"

@@ -1,0 +1,44 @@
+
+-- INSERT INTO
+--     LOGINS (USER_NAME)
+-- SELECT
+--     USER_NAME
+-- FROM
+--     USERS
+-- WHERE
+--     USER_NAME = %(user_name)s
+--     AND PASSWORD = md5(%(password)s);
+
+
+
+-- INSERT INTO LOGINS (USER_NAME, LOGIN_DATE) VALUES (%(user_name)s, NOW());
+INSERT INTO
+    LOGINS (USER_NAME)
+SELECT
+    USER_NAME
+FROM
+    USERS
+WHERE
+    USER_NAME = "U1_USERNAME"
+    AND PASSWORD = md5("P@55vv0rd");
+
+INSERT INTO
+    LOGINS (USER_NAME)
+SELECT
+    USER_NAME
+FROM
+    USERS
+WHERE
+    USER_NAME = "U1_USERNAMExxxx"
+    AND PASSWORD = md5("P@55vv0rd");
+
+
+INSERT INTO
+    LOGINS (USER_NAME)
+SELECT
+    USER_NAME
+FROM
+    USERS
+WHERE
+    USER_NAME = "U1_USERNAME"
+    AND PASSWORD = md5("P@55vv0rdxxx");
